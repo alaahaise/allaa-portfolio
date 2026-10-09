@@ -1,0 +1,45 @@
+{
+  "name": "allaa-portfolio",
+  "homepage": "https://allaa.vercel.app",
+  "description": "Portfolio site for Boumediene Allaa Eddine",
+  "repository": "https://github.com/alaahaise/allaa.git",
+  "author": "Boumediene Allaa Eddine",
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "remix vite:build",
+    "dev": "node ./scripts/dev.cjs && remix vite:dev",
+    "postinstall": "node ./scripts/draco.cjs"
+  },
+  "dependencies": {
+    "@remix-run/react": "2.16.7",
+    "framer-motion": "11.0.5",
+    "isbot": "^4.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.161.0",
+    "three-stdlib": "^2.29.4",
+    "@emailjs/browser": "^5.0.2",
+    "@remix-run/node": "2.16.7",
+    "@vercel/remix": "2.16.7"
+  },
+  "devDependencies": {
+    "@csstools/postcss-global-data": "^2.1.1",
+    "@remix-run/dev": "2.16.7",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "^8.4.33",
+    "postcss-custom-media": "^10.0.2",
+    "prop-types": "^15.8.1",
+    "vite": "^5.1.0",
+    "vite-jsconfig-paths": "^2.0.1",
+    "fs-extra": "^11.2.0"
+  },
+  "engines": {
+    "node": ">=19.9.0"
+  }
+}

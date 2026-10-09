@@ -1,0 +1,112 @@
+.skills {
+  width: 100vw;
+  padding-top: var(--space3XL);
+  padding-bottom: var(--space4XL);
+  display: flex;
+  justify-content: center;
+
+  @media (--mediaTablet) {
+    padding-right: 80px;
+    padding-left: 160px;
+  }
+
+  @media (--mediaMobile), (--mediaMobileLS) {
+    padding-right: var(--spaceOuter);
+    padding-left: var(--spaceOuter);
+  }
+}
+
+.content {
+  max-width: var(--maxWidthL);
+  width: 100%;
+
+  @media (--mediaTablet) {
+    max-width: 600px;
+  }
+}
+
+.title {
+  margin-bottom: var(--spaceL);
+  opacity: 0;
+  transition: opacity var(--durationXL) ease var(--durationM);
+
+  &[data-visible='true'] {
+    opacity: 1;
+  }
+}
+
+.divider {
+  margin-bottom: var(--spaceXL);
+}
+
+.groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space2XL) var(--space3XL);
+
+  @media (--mediaTablet) {
+    grid-template-columns: 100%;
+    gap: var(--spaceXL);
+  }
+}
+
+.group {
+  opacity: 0;
+  transform: translate3d(0, var(--spaceM), 0);
+  transition: opacity var(--durationXL) var(--bezierFastoutSlowin) var(--delay),
+    transform var(--durationXL) var(--bezierFastoutSlowin) var(--delay);
+
+  &[data-visible='true'] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.groupTitle {
+  display: block;
+  margin-bottom: var(--spaceM);
+  color: var(--primary);
+  font-weight: var(--fontWeightMedium);
+}
+
+.icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spaceS);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: var(--spaceS);
+  padding: 6px 14px 6px 6px;
+  border-radius: 999px;
+  background: var(--backgroundLight);
+}
+
+.iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex: none;
+  border-radius: 50%;
+  background: oklch(100% 0 0 / 0.95);
+
+  img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+  }
+}
+
+.iconName {
+  color: var(--textTitle);
+  white-space: nowrap;
+}

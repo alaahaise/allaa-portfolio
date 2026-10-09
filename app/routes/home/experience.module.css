@@ -1,0 +1,114 @@
+.experience {
+  width: 100vw;
+  padding-top: var(--space4XL);
+  padding-bottom: var(--space4XL);
+  display: flex;
+  justify-content: center;
+
+  @media (--mediaTablet) {
+    padding-right: 80px;
+    padding-left: 160px;
+  }
+
+  @media (--mediaMobile), (--mediaMobileLS) {
+    padding-top: var(--space3XL);
+    padding-right: var(--spaceOuter);
+    padding-left: var(--spaceOuter);
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  grid-column-gap: var(--space3XL);
+  max-width: var(--maxWidthL);
+  width: 100%;
+
+  @media (--mediaTablet) {
+    max-width: 600px;
+    grid-template-columns: 100%;
+    grid-row-gap: var(--space3XL);
+  }
+}
+
+.column {
+  min-width: 0;
+}
+
+.title {
+  margin-bottom: var(--spaceL);
+  opacity: 0;
+  transition: opacity var(--durationXL) ease var(--durationM);
+
+  &[data-visible='true'] {
+    opacity: 1;
+  }
+}
+
+.divider {
+  margin-bottom: var(--spaceXL);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spaceXL);
+}
+
+.item {
+  position: relative;
+  padding-left: var(--spaceL);
+  border-left: 2px solid color-mix(in lab, var(--text) 15%, transparent);
+  opacity: 0;
+  transform: translate3d(0, var(--spaceM), 0);
+  transition: opacity var(--durationXL) var(--bezierFastoutSlowin) var(--delay),
+    transform var(--durationXL) var(--bezierFastoutSlowin) var(--delay);
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--primary);
+  }
+
+  &[data-visible='true'] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.period {
+  display: block;
+  font-size: var(--fontSizeBodyXS);
+  font-weight: var(--fontWeightMedium);
+  color: var(--primary);
+  margin-bottom: var(--spaceXS);
+}
+
+.role {
+  margin-bottom: var(--spaceXS);
+  font-weight: var(--fontWeightMedium);
+}
+
+.company {
+  display: block;
+  margin-bottom: var(--spaceS);
+}
+
+.points {
+  margin: 0;
+  padding-left: var(--spaceL);
+  list-style: disc;
+  color: var(--textBody);
+
+  li + li {
+    margin-top: var(--spaceXS);
+  }
+}

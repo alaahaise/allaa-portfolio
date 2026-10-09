@@ -1,0 +1,6 @@
+/.cache
+/build
+.env
+.vercel
+public/draco
+node_modules

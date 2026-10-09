@@ -1,0 +1,19 @@
+{
+  "name": "Allaa Eddine Boumediene",
+  "fullName": "Boumediene Allaa Eddine",
+  "role": "IT Engineer",
+  "title": "System Information Engineer",
+  "disciplines": ["Developer", "Data Analyst"],
+  "url": "https://allaa.vercel.app",
+  "github": "alaahaise",
+  "linkedin": "allaa-bm",
+  "email": "allaaboum123@gmail.com",
+  "location": "Oran, Algeria",
+  "repo": "https://github.com/alaahaise/allaa",
+  "emailjs": {
+    "publicKey": "buj1tI0j-PIo8MKiV",
+    "serviceId": "service_kty73wm",
+    "templateId": "template_mm3hmly"
+  },
+  "ascii": "  /\\\n /__\\\n/    \\\n"
+}
