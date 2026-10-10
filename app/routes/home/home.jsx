@@ -8,7 +8,9 @@ import jobTrackingPlaceholder from '~/assets/job-tracking-placeholder.jpg';
 import skin from '~/assets/skin-segmentation.jpg';
 import skinLarge from '~/assets/skin-segmentation-large.jpg';
 import skinPlaceholder from '~/assets/skin-segmentation-placeholder.jpg';
-import sarima from '~/assets/sarima.png';
+import sarima from '~/assets/sarima.jpg';
+import sarimaLarge from '~/assets/sarima-large.jpg';
+import sarimaPlaceholder from '~/assets/sarima-placeholder.jpg';
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
@@ -55,6 +57,7 @@ export const Home = () => {
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
+  const projectFour = useRef();
   const moreProjects = useRef();
   const experience = useRef();
   const skills = useRef();
@@ -129,14 +132,15 @@ export const Home = () => {
           alt: 'Segmentation results: input image, ground truth, predicted probabilities and binary mask',
           textures: [
             {
-              srcSet: `${sarima} 800w, ${sarima} 1920w`,
-              placeholder: skinPlaceholder,
+              srcSet: `${sarima} 800w, ${sarimaLarge} 1920w`,
+              placeholder: sarimaPlaceholder,
             },
           ],
         }}
       />
             <ProjectSummary
         id="project-2"
+        alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
@@ -182,7 +186,7 @@ export const Home = () => {
       <ProjectSummary
         id="project-4"
         alternate
-        sectionRef={projectOne}
+        sectionRef={projectFour}
         visible={visibleSections.includes(projectOne.current)}
         index={4}
         tag="Power BI · Data visualization"

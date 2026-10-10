@@ -39,8 +39,7 @@ const ProfileText = ({ visible, titleId }) => (
       background with data science to deliver impactful solutions for businesses.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Outside of work I like sketching, dancing and listening to music. I’m available for
-      freelance work, so feel free to drop me a line at{' '}
+      I’m available for freelance work, so feel free to drop me a line at{' '}
       <Link href={`mailto:${config.email}`}>{config.email}</Link>.
     </Text>
   </Fragment>

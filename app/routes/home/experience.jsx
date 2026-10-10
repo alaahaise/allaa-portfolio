@@ -11,69 +11,76 @@ import styles from './experience.module.css';
 
 const experience = [
   {
-    period: 'Feb 2025 – Apr 2025',
+    period: 'Jul 2026 – Present',
+    role: 'Information Systems Engineer',
+    company: 'CASPM – Mers El Hadjadj, Algeria',
+    points: [
+      'Business process modeling.',
+      'Software development with Node.js and Electron.js, including attendance management (replacing ZKTeco) and stock management.',
+      'Built dynamic dashboards in Power BI.',
+      'Maintained company software and databases and resolved day-to-day incidents.',
+    ],
+  },
+  {
+    period: 'Apr 2026 – Jun 2026',
+    role: 'Information Systems Engineer',
+    company: 'Kabima Fourniture – Oran, Algeria',
+    points: [
+      'Installed and configured equipment, networks and systems (e.g. NAS).',
+      'Developed internal tools.',
+      'Managed technical purchasing: sourcing, tenders, IT and electrical equipment, quality control and delivery follow-up.',
+    ],
+  },
+  {
+    period: 'Mar 2025 – Apr 2025',
     role: 'Intern – IT Management Department',
     company: 'Giplait – La Source Dairy, Saïda, Algeria',
     points: [
-      'Modeled the production cost function for milk powder.',
-      'Applied a metaheuristic optimization algorithm in MATLAB.',
-      'Developed a decision-support optimization system.',
+      'Designed a decision-support system (DSS) for production optimization using metaheuristic algorithms, notably TLBO and TTA.',
     ],
   },
   {
     period: 'Apr 2024 – May 2024',
     role: 'Intern – IT Management Department',
-    company: 'Algerian Cement Industrial Group, Saïda, Algeria',
-    points: [
-      'BPMN modeling of a process: corrective maintenance management.',
-      'Management and monitoring of the IT infrastructure with GLPI.',
-    ],
+    company: 'Algerian Cement Industrial Group (GICA), Saïda, Algeria',
+    points: ['BPMN modeling of corrective maintenance.', 'IT asset management with GLPI.'],
   },
   {
     period: 'Jan 2024 – Feb 2024',
     role: 'Intern – IT Solutions Department',
     company: 'CHIALI SERVICES, Sidi Bel Abbès, Algeria',
-    points: [
-      'Designed a real-time server and connectivity monitoring system using UML.',
-      'Developed the associated web application.',
-    ],
+    points: ['UML design and development of a server monitoring application.'],
   },
   {
     period: 'Mar 2023 – Apr 2023',
     role: 'Intern – IT Management Department',
-    company: 'Algerian Cement Industrial Group, Saïda, Algeria',
-    points: [
-      'Developed HR reports and dashboards in Power BI, using star schema modeling to support advanced data analysis.',
-    ],
+    company: 'Algerian Cement Industrial Group (GICA), Saïda, Algeria',
+    points: ['Interactive HR dashboards in Power BI (star schema).'],
   },
   {
     period: 'Dec 2022 – Jan 2023',
-    role: 'Intern – Information Systems and Management Department',
-    company: 'Sonatrach, GP1Z Zone, Oran, Algeria',
-    points: [
-      'Gained hands-on experience in network and database architecture.',
-      'Practiced database administration with Oracle DBMS.',
-    ],
+    role: 'Intern – IT & Management Department',
+    company: 'Sonatrach (GP1Z Zone), Oran, Algeria',
+    points: ['Introduction to industrial networks and Oracle database administration.'],
   },
 ];
 
 const education = [
   {
     period: '2022 – 2025',
-    role: 'Engineering Degree in Information Systems Engineering and Management',
-    company: 'National Polytechnic School of Oran – Maurice Audin',
+    role: "State Engineering Degree & Master's in Information Systems Engineering and Management",
+    company: 'National Polytechnic School Maurice Audin, Oran, Algeria',
     href: 'https://www.enp-oran.dz/en/',
+    points: [
+      'Final-year thesis: Optimization of metaheuristic algorithms and applications in different domains.',
+    ],
   },
   {
     period: '2020 – 2022',
-    role: 'Entrance Exam for the Second Cycle of Engineering',
-    company: 'Higher School of Electrical and Energy Engineering of Oran',
+    role: 'Preparatory Cycle in Science and Technology',
+    company: 'Higher School of Electrical and Energy Engineering of Oran, Algeria',
     href: 'https://esgee-oran.dz/new/',
-  },
-  {
-    period: '2020',
-    role: 'Baccalaureate, Mathematics',
-    company: 'Directorate of Education, Saïda',
+    points: ['Preparatory training for engineering studies.'],
   },
 ];
 

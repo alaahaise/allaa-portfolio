@@ -110,3 +110,6 @@
   color: var(--textTitle);
   white-space: nowrap;
 }
+.icon:not(:has(.iconBox)) {
+  padding-left: 14px;
+}

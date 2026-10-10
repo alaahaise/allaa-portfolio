@@ -10,14 +10,15 @@ import styles from './skills.module.css';
 
 const skillGroups = [
   {
-    title: 'Languages',
+    title: 'Development',
     items: [
       { name: 'Java', icon: 'java.png' },
-      { name: 'Python', icon: 'python.png' },
-      { name: 'PHP', icon: 'php.png' },
-      { name: 'HTML', icon: 'html.png' },
-      { name: 'CSS', icon: 'css.png' },
-      { name: 'JavaScript', icon: 'javascript.png' },
+      { name: 'Express.js' },
+      { name: 'Electron.js' },
+      { name: 'Vue.js' },
+      { name: 'Tailwind CSS' },
+      { name: 'Bootstrap' },
+      { name: 'Git / GitHub', icon: 'git.png' },
     ],
   },
   {
@@ -30,30 +31,45 @@ const skillGroups = [
     ],
   },
   {
-    title: 'Frameworks',
+    title: 'Data & BI',
     items: [
-      { name: 'Django', icon: 'django.png' },
-      { name: 'Odoo ERP', icon: 'odoo.png' },
-      { name: 'Spring Boot', icon: 'springboot.png' },
-    ],
-  },
-  {
-    title: 'Data & Software',
-    items: [
+      { name: 'Python / Pandas', icon: 'python.png' },
       { name: 'Power BI', icon: 'powerbi.png' },
-      { name: 'MATLAB', icon: 'matlab.png' },
-      { name: 'Excel', icon: 'excel.png' },
-      { name: 'MS Project', icon: 'msproject.png' },
-      { name: 'GLPI', icon: 'glpi.png' },
+      { name: 'Dimensional modeling' },
     ],
   },
   {
-    title: 'Tools & Platforms',
+    title: 'Data science',
+    items: [{ name: 'ARIMA / SARIMA' }, { name: 'XGBoost' }, { name: 'U-Net' }],
+  },
+  {
+    title: 'Management & IS',
     items: [
-      { name: 'Git / GitHub', icon: 'git.png' },
-      { name: 'Firebase', icon: 'firebase.png' },
-      { name: 'Jira', icon: 'jira.png' },
-      { name: 'Canva', icon: 'canva.svg' },
+      { name: 'BPMN' },
+      { name: 'UML' },
+      { name: 'GLPI', icon: 'glpi.png' },
+      { name: 'Odoo', icon: 'odoo.png' },
+      { name: 'MS Project', icon: 'msproject.png' },
+    ],
+  },
+  {
+    title: 'Infrastructure',
+    items: [
+      { name: 'Network configuration' },
+      { name: 'Operating systems' },
+      { name: 'IS administration' },
+    ],
+  },
+  {
+    title: 'Certifications',
+    items: [{ name: 'ITIL v4' }, { name: 'CCNA 1' }, { name: 'Data Analytics' }],
+  },
+  {
+    title: 'Languages',
+    items: [
+      { name: 'Arabic – native' },
+      { name: 'English – advanced' },
+      { name: 'French – intermediate' },
     ],
   },
 ];
@@ -99,15 +115,17 @@ export const Skills = ({ id, visible, sectionRef }) => {
                   <ul className={styles.icons}>
                     {group.items.map(item => (
                       <li key={item.name} className={styles.icon}>
-                        <span className={styles.iconBox}>
-                          <img
-                            src={`/skills/${item.icon}`}
-                            alt=""
-                            loading="lazy"
-                            width="28"
-                            height="28"
-                          />
-                        </span>
+                        {item.icon && (
+                          <span className={styles.iconBox}>
+                            <img
+                              src={`/skills/${item.icon}`}
+                              alt=""
+                              loading="lazy"
+                              width="28"
+                              height="28"
+                            />
+                          </span>
+                        )}
                         <Text size="s" as="span" className={styles.iconName}>
                           {item.name}
                         </Text>
