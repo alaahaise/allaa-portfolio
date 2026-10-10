@@ -22,6 +22,7 @@ import { Skills } from './skills';
 import { useEffect, useRef, useState } from 'react';
 import config from '~/config.json';
 import styles from './home.module.css';
+import { Button } from '~/components/button';
 
 // Prefetch draco decoder wasm
 export const links = () => {

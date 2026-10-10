@@ -334,3 +334,19 @@
     opacity: 1;
   }
 }
+.resume {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: var(--spaceXL);
+  opacity: 0;
+  transition: opacity var(--durationL) var(--bezierFastoutSlowin) 2.2s;
+
+  &[data-visible='true'] {
+    opacity: 1;
+  }
+
+  @media (--mediaMobile) {
+    margin-top: var(--spaceL);
+  }
+}
